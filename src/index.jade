@@ -1,0 +1,38 @@
+extends _layouts/base
+
+include _modules/link/link
+
+block content
+  .container
+    header
+      h2.logo-text Relaxr
+      h3.slogan Get piece of mind with a single tap
+      button.cta Get it Now
+
+    section.content
+      h1 Benefits
+      p
+        | The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.
+
+      ul
+        li Schedule meetings for you
+        li Excel automation to complete your work for you
+        li Responds to emails on your behalf
+        li Does all your work for you with our revolutionary AI technology
+
+    section.quote
+      blockquote 
+        | “Relaxr changed my life. I’ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work.”
+        br
+        span - Amanda, Intuit
+    .cta-band
+      button.signup Sign Up Now!
+    
+    footer
+      h1 Relaxr
+      img(src='../images/twitter.png')
+      img(src='../images/facebook.png')
+      p
+        | Copyright 2015. Relaxr.
+      
+  code.version v1.3.3

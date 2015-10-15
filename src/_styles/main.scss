@@ -1,0 +1,197 @@
+// Normalize Styles
+@import 'node_modules/normalize.css/normalize';
+
+// Import Modules
+@import '../_modules/link/link';
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+
+.version {
+  font-size: 14px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+// Styling on warning for users on IE7 or below
+.browsehappy {
+  text-align: center;
+  margin: 0;
+  background: #fff8e2;
+  color: #000;
+  padding: 0.5em 0;
+}
+
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-family: 'Open Sans', sans-serif;
+     background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+     background-size: 100%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+
+}
+
+header {
+  text-align:center;
+  .logo-text {
+    font-weight: 800;
+    font-size: 24px;
+    color:white;
+    text-align:left;
+    padding-left:100px;
+  }
+
+  .slogan {
+    font-weight:600;
+    font-size:24px;
+    color:white;
+    margin-top: 50px;
+  }
+
+  .cta {
+    margin-top: 30px;
+    font-weight:800;
+    font-size:14px;
+    border-radius: 5px;
+    background-color:#f9e42e;
+    border-style:none;
+    padding: 10px 20px;
+  }
+}
+
+section.content {
+  margin-top:300px;
+  padding:50px;
+  height:300px;
+  background-color:#f0efef;
+  font-weight:300;
+  font-size:13px;
+  h1 {
+    font-weight:600;
+    font-size:20px;
+  }
+}
+
+section.quote {
+  text-align:center;
+  height:300px;
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size:cover;
+  color:white;
+  blockquote {
+    margin: 0 auto;
+    width:40%;
+    padding:50px;
+    font-weight:300;
+    font-size:18px;
+    font-style:italic;
+    span {
+      font-style:normal;
+      font-weight:600;
+    }
+  }
+
+}
+
+.cta-band {
+  background-color: #f9e42e;
+  height:100px;
+  padding: 35px;
+  color:white;
+  font-weight: 800;
+  font-size:12px;
+  text-align:center;
+  button.signup {
+    background-color: #033048;
+    border:none;
+    border-radius: 5px; 
+    padding:10px;
+  }
+}
+
+footer {
+  background-color: #121212;
+  height:200px;
+  text-align:center;
+  padding-top:40px;
+  color:white;
+  font-size:9px;
+  font-weight: 600;
+  h1 {
+    margin:0;
+    color: #f9e42e;
+    font-weight:800;
+    font-size:24px;
+  }
+  img {
+
+    padding: 30px 15px 15px 15px;
+
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
